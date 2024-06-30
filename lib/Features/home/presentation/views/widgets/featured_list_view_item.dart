@@ -7,19 +7,16 @@ class FeaturedListViewItem extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return SizedBox(
-      height: MediaQuery.sizeOf(context).height * .3,
-      child: AspectRatio(
-        aspectRatio: 2.7 / 4,
-        child: Container(
-          height: 200,
-          width: 130,
-          decoration: const BoxDecoration(
-            borderRadius: BorderRadius.all(Radius.circular(15)),
-            image: DecorationImage(
-              image: NetworkImage(AssetsData.book1),
-              fit: BoxFit.fill,
-            ),
+    return AspectRatio(
+      aspectRatio: 2.7 / 4,
+      child: Container(
+        height: 200,
+        width: 130,
+        decoration: const BoxDecoration(
+          borderRadius: BorderRadius.all(Radius.circular(15)),
+          image: DecorationImage(
+            image: NetworkImage(AssetsData.book1),
+            fit: BoxFit.fill,
           ),
         ),
       ),
